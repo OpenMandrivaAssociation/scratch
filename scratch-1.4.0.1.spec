@@ -175,7 +175,7 @@ install -m 644 src/%{name}.xml %{buildroot}%{_datadir}/mime/packages/.
 rm -rf %{buildroot}
 
 %files
-#%defattr(-,root,root,-)
+%defattr(-,root,root)
 #%doc
 %{_bindir}/%{name}
 %{_libdir}/%{name}
