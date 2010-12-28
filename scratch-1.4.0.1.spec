@@ -9,7 +9,8 @@ URL: http://scratch.mit.edu
 Source0: http://info.scratch.mit.edu/sites/infoscratch.media.mit.edu/files/file/scratch-1.4.0.1.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
-BuildRequires:	libv4l-devel pango1.0-devel
+BuildRequires:	libv4l-devel
+BuildRequires:	%{_lib}pango1.0-devel
 Requires: squeak-vm, libv4l0
 %define        squeakver 3.10-4
 
