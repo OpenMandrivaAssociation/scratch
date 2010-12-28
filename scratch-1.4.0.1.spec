@@ -1,12 +1,11 @@
-%define distsuffix edm
 Name: scratch
 Version: 1.4.0.1
 Release: %mkrel 3
 Summary: Programming system and content development tool
-Group: Lifelong Kindergarten Group at the MIT Media Lab
+Group: Education
+Group: Development/Other
 License: MIT
-URL: http://scratch.mit.edu	
-Packager: Kevin Somervill <ksomervi@brokenlogo.com>
+URL: http://scratch.mit.edu
 Source0: http://info.scratch.mit.edu/sites/infoscratch.media.mit.edu/files/file/scratch-1.4.0.1.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
@@ -16,10 +15,6 @@ Requires: squeak-vm, libv4l0
 
 %description
 Scratch is a programming language that makes it easy to create your own interactive stories, animations, games, music, and art -- and share your creations on the web. 	
-
-%description -l ru
-среда программирования для юных программистов. Она основана на построении кирпичиков. 
-Скретч создан на основе языка Лого, написан на языке Сквик
 
 # Disable the build of a debug package
 %global _enable_debug_package 0
