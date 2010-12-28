@@ -10,7 +10,7 @@ Source0: http://info.scratch.mit.edu/sites/infoscratch.media.mit.edu/files/file/
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
 BuildRequires:	libv4l-devel
-Requires: squeak-vm, libv4l0
+Requires: squeak-vm, libv4l0 pango1.0-devel
 %define        squeakver 3.10-4
 
 %description
