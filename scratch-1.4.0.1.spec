@@ -1,12 +1,13 @@
 Name: scratch
 Version: 1.4.0.1
-Release: %mkrel 3
+Release: %mkrel 4
 Summary: Programming system and content development tool
 Group: Education
 Group: Development/Other
 License: MIT
 URL: http://scratch.mit.edu
 Source0: http://info.scratch.mit.edu/sites/infoscratch.media.mit.edu/files/file/scratch-1.4.0.1.tar.gz
+Patch0:	scratch_locale.patch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
 BuildRequires:	libv4l-devel
@@ -24,6 +25,7 @@ Scratch is a programming language that makes it easy to create your own interact
 
 %prep
 %setup -q -n %{name}
+%patch0 -p0
 
 %build
 make
