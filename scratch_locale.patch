@@ -1,0 +1,125 @@
+--- locale/ru.po.old	2010-02-20 06:35:00.000000000 +0300
++++ locale/ru.po	2011-08-16 09:05:27.437090456 +0400
+@@ -3,8 +3,8 @@
+ "Project-Id-Version: Scratch\n"
+ "Report-Msgid-Bugs-To: Evelyn Eastmond <evelyn@media.mit.edu>\n"
+ "POT-Creation-Date: 2007-12-06\n"
+-"PO-Revision-Date: 2009-05-26 12:01-0400\n"
+-"Last-Translator: Evgeny Patarakin <patarakin@gmail.com>\n"
++"PO-Revision-Date: 2011-08-16 09:05+0300\n"
++"Last-Translator: Alexander Kazancev <kazancas@mandriva.ru>\n"
+ "Language-Team: LANGUAGE <LL@li.org>\n"
+ "Language: ru\n"
+ "MIME-Version: 1.0\n"
+@@ -16,7 +16,6 @@
+ ############################################
+ # FORMATTING
+ ############################################
+-
+ # Language name as you'd like it to appear in the Languages menu
+ # (Required)
+ msgid "Language-Name"
+@@ -53,7 +52,6 @@
+ ############################################
+ # BLOCKS
+ ############################################
+-
+ msgid "%H sensor value"
+ msgstr "%H значение сенсора"
+ 
+@@ -103,7 +101,7 @@
+ msgstr "изменить цвет пера на %n"
+ 
+ msgid "change pen shade by %n"
+-msgstr "изменить тень пера на&nbsp; %n"
++msgstr "изменить тень пера на %n"
+ 
+ msgid "change pen size by %n"
+ msgstr "изменить размер пера на %n"
+@@ -435,7 +433,6 @@
+ ############################################
+ # USER INTERFACE
+ ############################################
+-
+ msgid "(empty)"
+ msgstr "(пусто)"
+ 
+@@ -599,7 +596,7 @@
+ msgstr "Удалить переменную"
+ 
+ msgid "Delete this background"
+-msgstr ""
++msgstr "Удалить этот фон"
+ 
+ msgid "Delete this costume"
+ msgstr "Удалить этот костюм"
+@@ -662,7 +659,7 @@
+ msgstr "Элипс (рисует элипс или круг)"
+ 
+ msgid "enable remote sensor connections"
+-msgstr ""
++msgstr "Включить соединение с внешним сенсором"
+ 
+ msgid "Enter presentation mode"
+ msgstr "Перейти в режим презентации"
+@@ -725,7 +722,7 @@
+ msgstr "ложь"
+ 
+ msgid "File"
+-msgstr ""
++msgstr "Файл"
+ 
+ msgid "File not found"
+ msgstr "Файл не найден"
+@@ -797,7 +794,7 @@
+ msgstr "помощь"
+ 
+ msgid "Help"
+-msgstr "помощь"
++msgstr "Помощь"
+ 
+ msgid "Help Page"
+ msgstr "Страница помощи"
+@@ -957,7 +954,7 @@
+ msgstr "Новый костюм"
+ 
+ msgid "New file name?"
+-msgstr ""
++msgstr "Новое имя файла?"
+ 
+ msgid "New Filename:"
+ msgstr "Новое имя файла: "
+@@ -1221,7 +1218,7 @@
+ msgstr "Сжать спрайт"
+ 
+ msgid "Simulation"
+-msgstr ""
++msgstr "Симуляция"
+ 
+ msgid "Single-step speed?"
+ msgstr "скорость шага"
+@@ -1313,7 +1310,6 @@
+ msgid "The file name already exists. Overwrite existing file?"
+ msgstr "Файл с таким именем уже существует. Переписать существующий файл?"
+ 
+-#, fuzzy
+ msgid "thing"
+ msgstr "значение"
+ 
+@@ -1345,7 +1341,7 @@
+ msgstr "стрелка вверх"
+ 
+ msgid "Updating thumbnails"
+-msgstr ""
++msgstr "Обновить превью"
+ 
+ msgid "Upload succeeded!"
+ msgstr "Загрузка прошла успешно!"
+@@ -1395,7 +1391,6 @@
+ ############################################
+ # MIDI INSTRUMENTS
+ ############################################
+-
+ msgid "Accordion"
+ msgstr "Акордеон"
+ 
