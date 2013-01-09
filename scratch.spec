@@ -5,14 +5,14 @@
 %define		squeak_ver		4.0.3-2202
 
 Name:		scratch
-Version:	1.4.0.1
-Release:	%mkrel 5
+Version:	1.4.0.7
+Release:	1
 Summary:	Programming system and content development tool
 Group:		Education
 Group:		Development/Other
 License:	MIT
 URL:		http://scratch.mit.edu
-Source0:	http://info.scratch.mit.edu/sites/infoscratch.media.mit.edu/files/file/scratch-1.4.0.1.tar.gz
+Source0:	http://info.scratch.mit.edu/sites/infoscratch.media.mit.edu/files/file/scratch-1.4.0.7.src.tar.gz
 Patch0:		scratch_locale.patch
 BuildRequires:	libv4l-devel
 BuildRequires:	pkgconfig(pangocairo)
@@ -24,7 +24,7 @@ interactive stories, animations, games, music, and art -- and share your
 creations on the web.
 
 %prep
-%setup -q -n %{name}
+%setup -q -n %{name}-%{version}.src
 %patch0 -p0
 
 rm -f Plugins/* Plugins64/* App/scratch_squeak_vm
@@ -43,7 +43,7 @@ cp -fpR Help locale Media Projects %{buildroot}%{_datadir}/%{name}
 
 install -d %{buildroot}%{_docdir}/%{name}
 ln -sf %{_datadir}/%{name}/Help %{buildroot}%{_docdir}/%{name}/Help
-install -m 644 {ACKNOWLEDGEMENTS,KNOWN-BUGS,license.txt} %{buildroot}%{_docdir}/%{name}
+install -m 644 {ACKNOWLEDGEMENTS,KNOWN-BUGS,LICENSE} %{buildroot}%{_docdir}/%{name}
 
 install -d %{buildroot}%{_mandir}/man1
 install -m 644 src/man/scratch.1.gz %{buildroot}%{_mandir}/man1
