@@ -72,6 +72,8 @@ cat > %{buildroot}%{_bindir}/%{name} <<EOF
 EOF
 chmod +x %{buildroot}%{_bindir}/%{name}
 
+chmod -R 0755 %{buildroot}/%{_datadir}/%{name}/Media
+
 %files
 %{_bindir}/%{name}
 %{_libdir}/%{name}
@@ -84,21 +86,3 @@ chmod +x %{buildroot}%{_bindir}/%{name}
 %{_datadir}/icons/hicolor/48x48/mimetypes/*
 %{_datadir}/icons/hicolor/128x128/apps/*
 %{_datadir}/icons/hicolor/128x128/mimetypes/*
-
-
-%changelog
-* Wed Feb 29 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.4.0.1-5mdv2012.0
-+ Revision: 781409
-- Rebuild package to not install prebuilt binaries and work on x86_64.
-
-* Tue Aug 16 2011 Александр Казанцев <kazancas@mandriva.org> 1.4.0.1-4
-+ Revision: 694670
-- update russian locale
-
-* Wed Dec 29 2010 Александр Казанцев <kazancas@mandriva.org> 1.4.0.1-3mdv2011.0
-+ Revision: 625738
--initial release
-- import scratch
-
-
-
