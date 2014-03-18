@@ -13,6 +13,7 @@ Group:		Development/Other
 License:	MIT
 URL:		http://scratch.mit.edu
 Source0:	http://info.scratch.mit.edu/sites/infoscratch.media.mit.edu/files/file/scratch-1.4.0.7.src.tar.gz
+Source1:	scratch.rpmlintrc
 Patch0:		scratch_locale.patch
 BuildRequires:	libv4l-devel
 BuildRequires:	pkgconfig(pangocairo)
@@ -73,6 +74,8 @@ EOF
 chmod +x %{buildroot}%{_bindir}/%{name}
 
 chmod -R 0755 %{buildroot}/%{_datadir}/%{name}/Media
+chmod -R 0755 %{buildroot}/%{_datadir}/%{name}/Projects
+chmod -R 0755 %{buildroot}/%{_datadir}/%{name}/Help
 
 %files
 %{_bindir}/%{name}
