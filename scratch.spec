@@ -15,6 +15,7 @@ URL:		http://scratch.mit.edu
 Source0:	http://info.scratch.mit.edu/sites/infoscratch.media.mit.edu/files/file/scratch-1.4.0.7.src.tar.gz
 Source1:	scratch.rpmlintrc
 Patch0:		scratch_locale.patch
+Patch1:		scratch-1.4.0.7-sduino-find_serial_ports.patch
 BuildRequires:	libv4l-devel
 BuildRequires:	pkgconfig(pangocairo)
 Requires:	squeak-vm
@@ -27,6 +28,7 @@ creations on the web.
 %prep
 %setup -q -n %{name}-%{version}.src
 %patch0 -p0
+%patch1 -p1
 
 rm -f Plugins/* Plugins64/* App/scratch_squeak_vm
 

@@ -1,0 +1,14 @@
+--- scratch-1.4.0.7.src/src/plugins/scratch/unixSeriaPort2Ops.c.orig	2013-02-28 13:37:49.192408027 +0400
++++ scratch-1.4.0.7.src/src/plugins/scratch/unixSeriaPort2Ops.c	2013-02-28 13:43:02.607540279 +0400
+@@ -337,7 +337,10 @@
+ }
+ 
+ int isSerialPortDev(char *s) {
+-	return isPrefix("ttyusb", s);
++	return isPrefix("ttyusb", s) ||
++		isPrefix("ttys", s) ||
++		isPrefix("ttyacm", s) ||
++		isPrefix("rfcomm", s);
+ }
+ 
+ int isPrefix(char *prefix, char *s) {
