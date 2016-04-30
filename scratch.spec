@@ -13,6 +13,7 @@ Group:		Development/Other
 License:	MIT
 URL:		http://scratch.mit.edu
 Source0:	http://info.scratch.mit.edu/sites/infoscratch.media.mit.edu/files/file/scratch-1.4.0.7.src.tar.gz
+Source100:	%{name}.rpmlintrc
 Patch0:		scratch_locale.patch
 BuildRequires:	libv4l-devel
 BuildRequires:	pkgconfig(pangocairo)
@@ -40,6 +41,7 @@ install -m 644 Plugins/* %{buildroot}%{_libdir}/%{name}/Plugins
 
 install -d %{buildroot}%{_datadir}/%{name}
 cp -fpR Help locale Media Projects %{buildroot}%{_datadir}/%{name}
+find %{buildroot}%{_datadir}/%{name} -type d -exec chmod 755 {} \;
 
 install -d %{buildroot}%{_docdir}/%{name}
 ln -sf %{_datadir}/%{name}/Help %{buildroot}%{_docdir}/%{name}/Help
