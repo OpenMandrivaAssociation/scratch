@@ -2,7 +2,7 @@
 %define		_enable_debug_package	0
 %define		debug_package		%{nil}
 %define		__os_install_post	/usr/lib/rpm/brp-compress %{nil}
-%define		squeak_ver		4.0.3-2202
+%define		squeak_ver		4.10.2-2614
 
 Name:		scratch
 Version:	1.4.0.7
