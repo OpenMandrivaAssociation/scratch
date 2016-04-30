@@ -6,7 +6,7 @@
 
 Name:		scratch
 Version:	1.4.0.7
-Release:	1
+Release:	1.1
 Summary:	Programming system and content development tool
 Group:		Education
 Group:		Development/Other
