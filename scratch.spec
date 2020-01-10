@@ -96,7 +96,7 @@ English
 
 %prep
 %setup -q -n %{name}-%{version}.src
-%apply_patches
+%autopatch -p1
 
 %build
 # since the Squeak VM version 4.10.2.2593 and greater includes all the
