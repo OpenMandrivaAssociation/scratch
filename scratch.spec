@@ -1,6 +1,6 @@
 Name:           scratch
 Version:        1.4.0.7
-Release:        10
+Release:        11
 Summary:        Programming language learning environment for stories, games, music and art
 
 Group:          Education
