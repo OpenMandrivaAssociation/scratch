@@ -5,7 +5,7 @@ Summary:        Programming language learning environment for stories, games, mu
 
 Group:          Education
 License:        GPLv2 and ASL 2.0 and MIT and CC-BY-SA
-URL:            http://scratch.mit.edu
+URL:            https://scratch.mit.edu
 Source0:        http://download.scratch.mit.edu/%{name}-%{version}.src.tar.gz
 # The following source file is not used in the build process, but together
 # with Scratch.image and src/Scratch.changes comprises the preferred means
